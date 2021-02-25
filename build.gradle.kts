@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.4.30"
+    application
 }
 
 group = "org.example"
@@ -36,3 +37,6 @@ tasks {
     }
 }
 
+configure<ApplicationPluginConvention> {
+    mainClassName = "by.knisht.http.MainKt"
+}
